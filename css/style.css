@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'Rubik', sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Open Sans', sans-serif;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+a{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+a:hover{
+    text-decoration: none;
+}
+
+/*  section banner  css*/
+.banner{
+    position: relative;
+    background: url("../images/banner-bg.webp") center top no-repeat;
+    background-size: cover;
+    overflow-y: hidden;
+    padding: 140px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.banner::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.25);
+}
+
+.banner .main-banner{
+    padding: 40px 0px;
+    background: #DFDFE2;
+    width: 650px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap: 10px;
+    z-index: 10000;
+}
+
+.banner .main-banner h4{
+    font-size: 16px;
+    font-weight: 400;
+    text-transform:uppercase;
+    letter-spacing: 0.5px;
+
+}
+
+.banner .main-banner h2{
+    font-size: 45px;
+    line-height: 48px;
+    letter-spacing: 1px;
+}
+
+.banner .main-banner p{
+    font-size: 15px;
+    font-weight: 300;
+    color: #000;
+}
+
+.banner .main-banner a{
+    margin-top: 15px;
+    padding: 9px 40px;
+    background: #000;
+    text-align: center;
+    outline: none;
+    border: 1px solid #000;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.7px;
+    text-transform: capitalize;
+    cursor: pointer;
+    box-shadow: 0 0 2px 0 rgba(0,0,0, 0.3);
+}
+
+.banner .main-banner a:hover{
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+
+/* section joy  */
+.joy{
+    background-color: #E8E1D9;
+    width: 100%;
+    padding: 50px 0px;
+}
+
+.joy h2{
+    text-align: center;
+    padding: 30px 0px;
+    font-size: 40px;
+}
+
+.joy .inner-joy{
+    padding: 30px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0px auto;
+    align-items: center;
+}
+
+.joy .inner-joy .joy-details{
+    width: 50%;
+}
+
+.joy .inner-joy .joy-details p{
+    padding: 0px 83px;
+    font-size: 21px;
+    line-height: 38px;
+    margin-bottom: 13px;
+}
+
+.joy .inner-joy .joy-details .joy-btn{
+    padding: 0px 83px;
+    margin-top: 30px;
+}
+
+
+.joy .inner-joy .joy-details a{
+    padding: 9px 40px;
+    background: #2c332f;
+    text-align: center;
+    outline: none;
+    border: 1px solid #000;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.7px;
+    text-transform: capitalize;
+    cursor: pointer;
+    box-shadow: 0 0 2px 0 rgba(0,0,0, 0.3);
+}
+
+.joy .inner-joy .joy-details a:hover{
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.joy .inner-joy .joy-image {
+    width: 50%;
+
+}
+
+
+.joy .inner-joy .joy-image img{
+    max-width: 600px;
+}
+
+.popular{
+    padding: 60px 0px ;
+    background: #F3F2EE;
+}
+
+.popular h2{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 70px;
+    font-size: 40px;
+}
+
+.popular .popular-teas{
+    width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px auto;
+    gap: 10px;
+    justify-content: center;
+}
+
+.popular .popular-teas .teas{
+    width: 21%;
+}
+.popular .popular-teas .teas img{
+    max-width: 100%;
+    aspect-ratio: 1;
+}
+.popular .popular-teas .teas p{
+    font-size: 18px;
+    padding: 5px 5px;
+    text-align: center;
+}
+
+.popular .teas-btn{
+    padding-top: 60px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.popular .teas-btn a{
+    padding: 9px 40px;
+    background: #2c332f;
+    text-align: center;
+    outline: none;
+    border: 1px solid #000;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.7px;
+    text-transform: capitalize;
+    cursor: pointer;
+    box-shadow: 0 0 2px 0 rgba(0,0,0, 0.3);
+}
+
+.popular .teas-btn a:hover{
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+/* recent section */
+.joy-details ul{
+    padding: 0px 99px;
+    font-size: 21px;
+    line-height: 38px;
+    margin-bottom: 13px;
+}
+
+.joy-details ul li{
+    
+}
+
+.joy .inner-joy .joy-image img {
+    width: 600px;
+    height: 430px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0, 0.3);
+}
+
+/* choose section */
+.choose{
+    background: #F3F2EE;
+    padding: 70px 0px;
+}
+
+.choose .inner-choose{
+    width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px auto;
+    justify-content: center;
+    gap: 25px;
+}
+.choose .inner-choose .choose-image{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+.choose .inner-choose .choose-image img{
+    width: 600px;
+    height: 720px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0, 0.3);
+}
+.choose .inner-choose .choose-details{
+    width: 45%;
+    margin-top: 40px;
+}
+
+.choose .inner-choose .choose-details h2{
+    padding-left: 25px;
+    font-size: 35px;
+    margin-bottom: 22px;
+}
+
+.choose .inner-choose .choose-details p{
+    line-height: 32px;
+    font-size: 21px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    padding-right: 66px;
+}
+
+.choose .inner-choose .choose-details a{
+    padding: 9px 40px;
+    background: #2c332f;
+    text-align: center;
+    outline: none;
+    border: 1px solid #000;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.7px;
+    text-transform: capitalize;
+    cursor: pointer;
+    box-shadow: 0 0 2px 0 rgba(0,0,0, 0.3);
+}
+
+.choose .inner-choose .choose-details a:hover{
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+
+/* club section */
+.club{
+    background: #E8E1D9;
+    padding: 100px 0px;
+}
+
+.club h1{
+    padding-bottom: 50px;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    padding-top: 20px;
+    letter-spacing: 0.5px;
+}
+
+
+.club-members{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1400px;
+    margin: 0px auto;
+    justify-content: center;
+    gap: 20px;
+}
+
+.club-members .member{
+    width: 15%;
+    background: #fff;
+    padding: 20px 30px 50px 30px;
+    border-radius: 20px;
+}
+.member .star .bx{
+    color: #FAD064;
+    font-size: 22px;
+
+}
+.club-members .member h3{
+    font-size: 20px;
+    line-height: 30px;
+}
+.club-members .member .verified{
+    font-size: 13px;
+    color: #454343;
+    text-transform: capitalize;
+}
+.club-members .member p{
+    font-size: 15px;
+    color: #454545;
+}
